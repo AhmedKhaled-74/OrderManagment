@@ -1,0 +1,33 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "Order Management API",
+    "version": "v2"
+  },
+  "paths": {
+    "/api/v2/Orders": {
+      "get": {
+        "tags": [
+          "Orders"
+        ],
+        "summary": "Retrieves all orders including their associated order items",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": { }
+}

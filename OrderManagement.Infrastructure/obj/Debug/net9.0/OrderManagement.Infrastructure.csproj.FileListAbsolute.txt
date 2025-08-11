@@ -1,0 +1,17 @@
+G:\Programming\AspApps\OrderManagementSolution\OrderManagement.Infrastructure\bin\Debug\net9.0\OrderManagement.Infrastructure.deps.json
+G:\Programming\AspApps\OrderManagementSolution\OrderManagement.Infrastructure\bin\Debug\net9.0\OrderManagement.Infrastructure.runtimeconfig.json
+G:\Programming\AspApps\OrderManagementSolution\OrderManagement.Infrastructure\bin\Debug\net9.0\OrderManagement.Infrastructure.dll
+G:\Programming\AspApps\OrderManagementSolution\OrderManagement.Infrastructure\bin\Debug\net9.0\OrderManagement.Infrastructure.pdb
+G:\Programming\AspApps\OrderManagementSolution\OrderManagement.Infrastructure\bin\Debug\net9.0\OrderManagement.Core.dll
+G:\Programming\AspApps\OrderManagementSolution\OrderManagement.Infrastructure\bin\Debug\net9.0\OrderManagement.Core.pdb
+G:\Programming\AspApps\OrderManagementSolution\OrderManagement.Infrastructure\obj\Debug\net9.0\OrderManagement.Infrastructure.csproj.AssemblyReference.cache
+G:\Programming\AspApps\OrderManagementSolution\OrderManagement.Infrastructure\obj\Debug\net9.0\OrderManagement.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+G:\Programming\AspApps\OrderManagementSolution\OrderManagement.Infrastructure\obj\Debug\net9.0\OrderManagement.Infrastructure.AssemblyInfoInputs.cache
+G:\Programming\AspApps\OrderManagementSolution\OrderManagement.Infrastructure\obj\Debug\net9.0\OrderManagement.Infrastructure.AssemblyInfo.cs
+G:\Programming\AspApps\OrderManagementSolution\OrderManagement.Infrastructure\obj\Debug\net9.0\OrderManagement.Infrastructure.csproj.CoreCompileInputs.cache
+G:\Programming\AspApps\OrderManagementSolution\OrderManagement.Infrastructure\obj\Debug\net9.0\OrderMan.FDF35C14.Up2Date
+G:\Programming\AspApps\OrderManagementSolution\OrderManagement.Infrastructure\obj\Debug\net9.0\OrderManagement.Infrastructure.dll
+G:\Programming\AspApps\OrderManagementSolution\OrderManagement.Infrastructure\obj\Debug\net9.0\refint\OrderManagement.Infrastructure.dll
+G:\Programming\AspApps\OrderManagementSolution\OrderManagement.Infrastructure\obj\Debug\net9.0\OrderManagement.Infrastructure.pdb
+G:\Programming\AspApps\OrderManagementSolution\OrderManagement.Infrastructure\obj\Debug\net9.0\OrderManagement.Infrastructure.genruntimeconfig.cache
+G:\Programming\AspApps\OrderManagementSolution\OrderManagement.Infrastructure\obj\Debug\net9.0\ref\OrderManagement.Infrastructure.dll

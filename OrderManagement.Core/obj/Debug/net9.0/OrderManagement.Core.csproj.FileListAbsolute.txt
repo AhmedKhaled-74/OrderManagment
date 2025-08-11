@@ -1,0 +1,12 @@
+G:\Programming\AspApps\OrderManagementSolution\OrderManagement.Core\bin\Debug\net9.0\OrderManagement.Core.deps.json
+G:\Programming\AspApps\OrderManagementSolution\OrderManagement.Core\bin\Debug\net9.0\OrderManagement.Core.dll
+G:\Programming\AspApps\OrderManagementSolution\OrderManagement.Core\bin\Debug\net9.0\OrderManagement.Core.pdb
+G:\Programming\AspApps\OrderManagementSolution\OrderManagement.Core\obj\Debug\net9.0\OrderManagement.Core.GeneratedMSBuildEditorConfig.editorconfig
+G:\Programming\AspApps\OrderManagementSolution\OrderManagement.Core\obj\Debug\net9.0\OrderManagement.Core.AssemblyInfoInputs.cache
+G:\Programming\AspApps\OrderManagementSolution\OrderManagement.Core\obj\Debug\net9.0\OrderManagement.Core.AssemblyInfo.cs
+G:\Programming\AspApps\OrderManagementSolution\OrderManagement.Core\obj\Debug\net9.0\OrderManagement.Core.csproj.CoreCompileInputs.cache
+G:\Programming\AspApps\OrderManagementSolution\OrderManagement.Core\obj\Debug\net9.0\OrderManagement.Core.dll
+G:\Programming\AspApps\OrderManagementSolution\OrderManagement.Core\obj\Debug\net9.0\refint\OrderManagement.Core.dll
+G:\Programming\AspApps\OrderManagementSolution\OrderManagement.Core\obj\Debug\net9.0\OrderManagement.Core.pdb
+G:\Programming\AspApps\OrderManagementSolution\OrderManagement.Core\obj\Debug\net9.0\ref\OrderManagement.Core.dll
+G:\Programming\AspApps\OrderManagementSolution\OrderManagement.Core\obj\Debug\net9.0\OrderManagement.Core.csproj.AssemblyReference.cache

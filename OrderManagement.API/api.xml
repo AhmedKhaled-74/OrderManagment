@@ -1,0 +1,220 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OrderManagement.API</name>
+    </assembly>
+    <members>
+        <member name="T:OrderManagement.API.Controllers.CustomHelperController">
+            <summary>
+            ControllerBasefor custom helper methods that can be used across multiple controllers.
+            </summary>
+        </member>
+        <member name="T:OrderManagement.API.Controllers.v1.AccountController">
+            <summary>
+            For managing Accounts in the system.
+            </summary>
+        </member>
+        <member name="M:OrderManagement.API.Controllers.v1.AccountController.#ctor(Microsoft.Extensions.Logging.ILogger{OrderManagement.API.Controllers.v1.AccountController},Microsoft.AspNetCore.Identity.UserManager{OrderManagement.Core.Domain.Identity.AppUser},Microsoft.AspNetCore.Identity.RoleManager{OrderManagement.Core.Domain.Identity.AppRole},Microsoft.AspNetCore.Identity.SignInManager{OrderManagement.Core.Domain.Identity.AppUser},OrderManagement.Core.ServiceContracts.IJwtService)">
+            <summary>
+            constructor for AccountController
+            </summary>
+        </member>
+        <member name="M:OrderManagement.API.Controllers.v1.AccountController.PostRegister(OrderManagement.Core.DTOs.UserDTO.RegisterDTO)">
+            <summary>
+            Register to the app
+            </summary>
+            <param name="registerDTO">valid register feilds</param>
+            <returns>The newly created user</returns>
+        </member>
+        <member name="M:OrderManagement.API.Controllers.v1.AccountController.Login(OrderManagement.Core.DTOs.UserDTO.LoginDTO)">
+            <summary>
+            Login
+            </summary>
+            <param name="loginDTO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OrderManagement.API.Controllers.v1.AccountController.LogOut">
+            <summary>
+            logout approach
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OrderManagement.API.Controllers.v1.AccountController.AccessDenied">
+            <summary>
+            AccessDenied
+            </summary> 
+            <returns>Unauthorized-"Not Allowed"</returns>
+        </member>
+        <member name="M:OrderManagement.API.Controllers.v1.AccountController.CheckEmailExists(System.String)">
+            <summary>
+            Check Email Exists
+            </summary>
+            <param name="email">email</param>
+            <returns>true or false</returns>
+        </member>
+        <member name="M:OrderManagement.API.Controllers.v1.AccountController.GenerateNewToken(OrderManagement.Core.DTOs.UserDTO.TokenModel)">
+            <summary>
+            Generate New Token by refreshtoken
+            </summary>
+            <param name="token">exsist token</param>
+            <returns>new auth instance</returns>
+        </member>
+        <member name="T:OrderManagement.API.Controllers.v1.ItemsController">
+            <summary>
+            For managing items in the system.
+            </summary>
+            
+        </member>
+        <member name="M:OrderManagement.API.Controllers.v1.ItemsController.#ctor(OrderManagement.Core.ServiceContracts.IItemService,Microsoft.Extensions.Logging.ILogger{OrderManagement.API.Controllers.v1.ItemsController})">
+            <summary>
+            For managing items in the system.
+            </summary>
+            
+        </member>
+        <member name="M:OrderManagement.API.Controllers.v1.ItemsController.GetItems">
+            <summary>
+            Retrieves all items from the system
+            </summary>
+            <returns>A list of all items</returns>
+        </member>
+        <member name="M:OrderManagement.API.Controllers.v1.ItemsController.GetItem(System.Guid)">
+            <summary>
+            Retrieves a specific item by its unique identifier
+            </summary>
+            <param name="id">The unique identifier of the item to retrieve</param>
+            <returns>The requested item if found; otherwise returns NotFound</returns>
+        </member>
+        <member name="M:OrderManagement.API.Controllers.v1.ItemsController.PostItem(OrderManagement.Core.DTOs.ItemDTO.ItemAddRequest)">
+            <summary>
+            Creates a new item in the system
+            </summary>
+            <param name="itemDto">The item data to create</param>
+            <returns>The newly created item with its generated identifier</returns>
+        </member>
+        <member name="M:OrderManagement.API.Controllers.v1.ItemsController.PutItem(System.Guid,OrderManagement.Core.DTOs.ItemDTO.ItemUpdateRequest)">
+            <summary>
+            Updates an existing item with the provided data
+            </summary>
+            <param name="id">The unique identifier of the item to update</param>
+            <param name="itemDto">The updated item data</param>
+            <returns>NoContent if successful; BadRequest if ID mismatch; NotFound if item doesn't exist</returns>
+        </member>
+        <member name="M:OrderManagement.API.Controllers.v1.ItemsController.DeleteItem(System.Nullable{System.Guid})">
+            <summary>
+            Deletes an item with the specified unique identifier
+            </summary>
+            <param name="id">The unique identifier of the item to delete</param>
+            <returns>NoContent if successful; NotFound if item doesn't exist</returns>
+        </member>
+        <member name="T:OrderManagement.API.Controllers.v1.OrderItemsController">
+            <summary>
+            For managing order items in the system.
+            </summary>
+            
+        </member>
+        <member name="M:OrderManagement.API.Controllers.v1.OrderItemsController.#ctor(OrderManagement.Core.ServiceContracts.IOrderItemService,Microsoft.Extensions.Logging.ILogger{OrderManagement.API.Controllers.v1.OrderItemsController})">
+            <summary>
+            For managing order items in the system.
+            </summary>
+            
+        </member>
+        <member name="M:OrderManagement.API.Controllers.v1.OrderItemsController.GetOrderItems">
+            <summary>
+            Retrieves all order items
+            </summary>
+            <returns>A list of all order items</returns>
+        </member>
+        <member name="M:OrderManagement.API.Controllers.v1.OrderItemsController.GetOrderItem(System.Guid)">
+            <summary>
+            Retrieves a specific order item by its unique identifier
+            </summary>
+            <param name="id">The unique identifier of the order item to retrieve</param>
+            <returns>The requested order item if found; otherwise returns NotFound</returns>
+        </member>
+        <member name="M:OrderManagement.API.Controllers.v1.OrderItemsController.PostOrderItem(OrderManagement.Core.DTOs.OrderItemDTO.OrderItemAddRequest)">
+            <summary>
+            Creates a new order item with the provided data
+            </summary>
+            <param name="orderItemDto">The order item data to create</param>
+            <returns>The newly created order item with its generated identifier</returns>
+        </member>
+        <member name="M:OrderManagement.API.Controllers.v1.OrderItemsController.PutOrderItem(System.Guid,OrderManagement.Core.DTOs.OrderItemDTO.OrderItemUpdateRequest)">
+            <summary>
+            Updates an existing order item with the provided data
+            </summary>
+            <param name="id">The unique identifier of the order item to update</param>
+            <param name="orderItemDto">The updated order item data</param>
+            <returns>NoContent if successful; BadRequest if ID mismatch; NotFound if order item doesn't exist</returns>
+        </member>
+        <member name="M:OrderManagement.API.Controllers.v1.OrderItemsController.DeleteOrderItem(System.Nullable{System.Guid})">
+            <summary>
+            Deletes an order item with the specified unique identifier
+            </summary>
+            <param name="id">The unique identifier of the order item to delete</param>
+            <returns>NoContent if successful; NotFound if order item doesn't exist</returns>
+        </member>
+        <member name="T:OrderManagement.API.Controllers.v1.OrdersController">
+            <summary>
+            For managing orders in the system.
+            </summary>
+        </member>
+        <member name="M:OrderManagement.API.Controllers.v1.OrdersController.#ctor(OrderManagement.Core.ServiceContracts.IOrderService,Microsoft.Extensions.Logging.ILogger{OrderManagement.API.Controllers.v1.OrdersController})">
+            <summary>
+            For managing orders in the system.
+            </summary>
+        </member>
+        <member name="M:OrderManagement.API.Controllers.v1.OrdersController.GetOrders">
+            <summary>
+            Retrieves all orders including their associated order items
+            </summary>
+            <returns>A list of all orders with their order items</returns>
+        </member>
+        <member name="M:OrderManagement.API.Controllers.v1.OrdersController.GetOrder(System.Guid)">
+            <summary>
+            Retrieves a specific order by its unique identifier including its order items
+            </summary>
+            <param name="id">The unique identifier of the order to retrieve</param>
+            <returns>The requested order with its order items if found; otherwise returns NotFound</returns>
+        </member>
+        <member name="M:OrderManagement.API.Controllers.v1.OrdersController.PostOrder(OrderManagement.Core.DTOs.OrderDTO.OrderAddRequest)">
+            <summary>
+            Creates a new order with the provided order data
+            </summary>
+            <param name="orderDto">The order data to create</param>
+            <returns>The newly created order with its generated identifier</returns>
+        </member>
+        <member name="M:OrderManagement.API.Controllers.v1.OrdersController.PutOrder(System.Guid,OrderManagement.Core.DTOs.OrderDTO.OrderUpdateRequest)">
+            <summary>
+            Updates an existing order with the provided data
+            </summary>
+            <param name="id">The unique identifier of the order to update</param>
+            <param name="orderDto">The updated order data</param>
+            <returns>NoContent if successful; BadRequest if ID mismatch; NotFound if order doesn't exist</returns>
+        </member>
+        <member name="M:OrderManagement.API.Controllers.v1.OrdersController.DeleteOrder(System.Nullable{System.Guid})">
+            <summary>
+            Deletes an order with the specified unique identifier
+            </summary>
+            <param name="id">The unique identifier of the order to delete</param>
+            <returns>NoContent if successful; NotFound if order doesn't exist</returns>
+        </member>
+        <member name="T:OrderManagement.API.Controllers.v2.OrdersController">
+            <summary>
+            For managing orders in the system.
+            </summary>
+            
+        </member>
+        <member name="M:OrderManagement.API.Controllers.v2.OrdersController.#ctor(OrderManagement.Core.ServiceContracts.IOrderService,Microsoft.Extensions.Logging.ILogger{OrderManagement.API.Controllers.v2.OrdersController})">
+            <summary>
+            For managing orders in the system.
+            </summary>
+            
+        </member>
+        <member name="M:OrderManagement.API.Controllers.v2.OrdersController.GetOrders">
+            <summary>
+            Retrieves all orders including their associated order items
+            </summary>
+            <returns>A list of all orders with their order items</returns>
+        </member>
+    </members>
+</doc>
