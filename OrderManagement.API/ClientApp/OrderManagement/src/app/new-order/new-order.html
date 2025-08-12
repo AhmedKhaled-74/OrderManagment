@@ -1,0 +1,82 @@
+<div class="container py-4">
+  <h1 class="mb-4"><fa-icon [icon]="faPlusCircle"></fa-icon> New Order</h1>
+
+  <form
+    [formGroup]="orderForm"
+    (ngSubmit)="onSubmit()"
+    class="shadow-sm p-4 rounded bg-light"
+  >
+    <div class="mb-3">
+      <label for="customerName" class="form-label">Customer Name</label>
+      <input
+        type="text"
+        id="customerName"
+        formControlName="customerName"
+        class="form-control"
+        required
+      />
+    </div>
+
+    <div formArrayName="items">
+      <div
+        *ngFor="let item of items.controls; let i = index"
+        [formGroupName]="i"
+        class="border rounded p-3 mb-3"
+      >
+        <div class="row g-3 align-items-end">
+          <div class="col-md-5">
+            <label class="form-label">Item</label>
+            <select
+              formControlName="itemId"
+              class="form-select"
+              (change)="onItemSelect(i)"
+            >
+              <option value="">Select Item</option>
+              <option *ngFor="let item of availableItems" [value]="item.itemId">
+                {{ item.itemName }} - ${{ item.itemPrice }}
+              </option>
+            </select>
+          </div>
+
+          <div class="col-md-3">
+            <label class="form-label">Quantity</label>
+            <input
+              type="number"
+              min="1"
+              formControlName="quantity"
+              (change)="updateTotal(i)"
+            />
+          </div>
+
+          <div class="col-md-3">
+            <label class="form-label">Total</label>
+            <div class="form-control bg-light">${{ getItemTotal(i) }}</div>
+          </div>
+
+          <div class="col-md-1 text-end">
+            <button
+              type="button"
+              class="btn btn-outline-danger"
+              (click)="removeItem(i)"
+            >
+              <fa-icon [icon]="faTrash"></fa-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-between mt-4">
+      <button type="button" class="btn btn-secondary" (click)="addItem()">
+        <fa-icon [icon]="faPlus"></fa-icon> Add Item
+      </button>
+      <button
+        type="submit"
+        class="btn btn-success"
+        [disabled]="orderForm.invalid || items.length === 0"
+      >
+        <fa-icon [icon]="faCheck"></fa-icon> Create Order
+      </button>
+    </div>
+  </form>
+</div>

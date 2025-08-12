@@ -1,0 +1,8 @@
+.w-md-lg {
+  @media (min-width: 768px) {
+    width: 50%;
+  }
+  @media (min-width: 1200px) {
+    width: 30%;
+  }
+}
